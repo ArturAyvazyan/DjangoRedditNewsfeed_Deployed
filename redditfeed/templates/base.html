@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<a href='/zaplatka'>Обратный список </a>
+<br>
+<a href='/search'>Поиск </a>
+
+<body>
+    <h1>Список Новостей</h1>
+    {% for n in newis.values %}
+    <br>
+    {{ n.text }}
+    <br>
+    {{ n.date }}
+    </br>
+    {% endfor %}
+</body>
+
+<a href='/zaplatka'>Обратный список </a>
+
+</html>
